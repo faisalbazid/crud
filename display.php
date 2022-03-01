@@ -79,11 +79,11 @@ include 'connect.php';
       <td>'.$departement.'</td>
       <td>'.$salaire.'</td>
       <td>'.$fonction.'</td>
-      <td>'.$photo.'</td>
-
-  
       
-    <td>  <button><a href="edit.php?indexID='.$id.'">MODIFIER</a></button>
+
+      <td> <img src="data:image;base64,'.base64_encode($rows['PHOTO']).'" alt = "ImgERR" style="width: 30px; height: 30px;" > </td>
+      
+      <td> <button><a href="edit.php?indexID='.$id.'">MODIFIER</a></button>
       <button><a href="delete.php?indexID='.$id.'">SUPPRIMER</a></button>        </td>
   
                 </tr>';
